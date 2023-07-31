@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  mysqli:
+    container_name: mysqli
+    image: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root123
+      - MYSQL_ROOT_DATABASE=rootdb
+    ports:
+      - 3306:3306
