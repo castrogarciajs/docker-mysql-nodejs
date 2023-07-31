@@ -4,10 +4,10 @@ import { createPool } from "mysql2";
 const app = express();
 
 const pool = createPool({
-  host: "localhost",
+  host: "mysqli",
   user: "root",
   password: "root123",
-  port: "3306",
+  port: 3306,
 });
 
 app.get("/", async (req, res) => {
